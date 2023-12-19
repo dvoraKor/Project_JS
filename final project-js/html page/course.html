@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" a href="../pictures/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <title>רישום לקורס</title>
+</head>
+<body dir="rtl">
+    <div id="borberform">
+        <i class="bi bi-x-lg" id="xlogin" onclick="x_form()"></i>
+        <img id="logo3" src="../pictures/logo.png">
+        <div id="print_details"></div>
+        <form onsubmit="ook(event)">
+            <div id="none2">
+                <div class="inputs">
+                    <label >שם הקורס:</label>
+                    <input  type="text" name="uc" autofocus required autocomplete="on" class="logininput" id="name_c" onkeypress="IsLetterOfNamecource(event)"/>
+                    <div class="divim"></div>
+                </div>
+                <br />
+                <div class="inputs">
+                    <label >שם מלא:</label>
+                    <input  type="text" name="un" autofocus required autocomplete="on" class="logininput"  onkeypress="IsLetterOfName(event)" />
+                    <div class="divim"></div>
+                </div>
+                <br />
+                <div class="inputs">
+                    <label >טלפון: </label>
+                    <input  type="tel"  maxlength="15" required autocomplete="on" class="logininput" onkeypress="IsDigitOfPh(event)"   />
+                    <div class="divim"></div>
+                </div>
+                <br />
+                <div class="inputs">
+                    <label >כתובת מייל:</label>
+                    <input  type="email" autocomplete="on" class="logininput"  />
+                </div>
+                
+                <div>
+                    <h4>צורת תשלום:</h4>
+                        <input type="radio" id="צק" name="pay" value="pay1" placeholder="צק" class="pay" />
+                        <label for=" צק" class="pay">צ'ק</label>
+                        <input type="radio" id="מזומן" name="pay" value="pay2" placeholder="מזומן" class="pay" />
+                        <label for=" מזומן" class="pay" style="display: inline-block ">מזומן</label>
+                        <input type="radio" id="אשראי" name="pay" value="pay3" style="display: inline-block" placeholder="אשראי" class="pay" />
+                        <label for="אשראי" class="pay" style="display: inline-block">אשראי</label>
+                </div>
+                <br>
+                <div>
+                    <label > מספר אשראי:</label>
+                    <input  type="password" autocomplete="off" class="logininput" />
+                </div>
+                <div class="divim"></div>
+                <br />
+                <div>
+                    <label >  3 ספרות בגב הכרטיס:</label>
+                    <input  type="password" autocomplete="off" maxlength=" 3" class="logininput"  />
+                </div>
+                <br />
+                <div >
+                    <label >תוקף אשראי</label>
+                    <input  type="date" autocomplete="off"  />
+                </div>
+                <br />
+                <input type="submit" value="אישור" id="ookk" />
+                <br>
+            
+            </div>
+                
+        </form>
+        <div class="container" style="background-color:rgb(200 219 225)"> 
+        </div>
+</body>
+<script src="../js page/course.js"></script>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head id="one_top">
+    <link rel="icon" a href="./pictures/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>דף הבית</title>
+
+    <link href="./bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body dir="rtl" onscroll="scrol(event)">
+    
+    <header>
+        <div id="head2">
+            <div id="routing">
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="home()">דף הבית</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cources()">מסלולי לימוד</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cours()">הרשמה לקורס</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="response()">תגובות</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="aplication()">הרשמה לאתר</p>
+                </div>
+            </div>
+            <i class="bi bi-sticky links" onclick="signup1()"></i>
+            <i class="bi bi-person-x links" onclick="logout()"> </i>
+            <i class="bi bi-search links" onclick="searcha()"></i>
+            <div id="se">
+            </div>
+            <img id="logo2" src="./pictures/logo.png">
+        </div>
+        <div id="cart" style="display:none ;">
+            
+                <i id="xcart" class="bi bi-x-lg" onclick="x_cart()"></i>
+            <div id="top_cart">נרשמות <i class="bi bi-journal-check"></i></div>
+            <div id="types">
+                <div id="linelong"></div>
+                <div class="one_c">
+                    <i class="bi bi-camera2"></i>
+                    <p onclick="signup2(1)">קורס צילום</p>
+                </div>
+                <div class="line4"></div>
+                <div class="one_c">
+                    <i class="bi bi-display"></i>
+                    <p onclick="signup2(2)">קורס עיצוב אתרים</p>
+                </div>
+                <div class="line4"></div>
+                <div class="one_c">
+                    <i class="bi bi-brush"></i>
+                    <p onclick="signup2(3)">קורס ציור</p>
+                </div>
+                <div class="line4"></div>
+                <div class="one_c">
+                    <i class="bi bi-house"></i>
+                    <p onclick="signup2(4)">קורס עיצוב פנים</p>
+                </div>
+            </div>
+            <div id="big_cart" style="display: none;">
+            </div>
+        </div>
+
+        <!-- <div id="line"></div> -->
+    </header>
+    <section>
+        <img src="./pictures/gettyimages-661922268-612x612.jpg" id="imbg">
+        <div id="pri" style="display:none ;">---School online<br> קורסי עיצוב ברמה גבוהה!!!</div>
+        <i id="chat3" class="bi bi-chat-dots" onclick="chatopen()"></i>
+        <div id="chat" style="display:none ;">
+            <div id="topchat">
+                <i id="xchat" class="bi bi-x-lg" onclick="x_chat()"></i>
+                School Online
+            </div>
+            <div id="chat2">
+                <div id="qustionanswer">
+                    <p class="answers">??שלום!!! במה נוכל לעזור לך </p>
+                </div>
+            </div>
+            <input type="text" onkeypress="chat(event)" id="what">
+        </div>
+        <i id="ttop1" class="bi bi-arrow-up-circle" style="display:none ;" onclick="topp()"></i>
+    </section>
+    <!--  <button class="bubbly-button">Click me!</button> -->
+    <div class="button">
+        <div class="container">
+            <div class="tick">
+            </div>
+        </div>
+    </div> 
+    <footer>
+        <b class="textw">
+            School online-
+            <br />
+            בואו להתמקצע...
+        </b>
+            <div class="line-footer"></div>
+            <div class="place">
+                <b>כתובת המשרד<i class="bi bi-geo-alt"></i></b>
+                <span>בית הדפוס </span>
+                <span>כנפי נשרים</span>
+                <span>ירושלים</span>
+            </div>
+            <div class="line-footer"></div>
+            <div class="conection">
+                <b> יצירת קשר</b>
+                <span><i class="bi bi-at"></i>מייל:schoolon@gmail.com</i></span>
+                <span><i class="bi bi-telephone"></i>טלפון:02-9687541</span>
+                <span><i class="bi bi-whatsapp"></i>וואצפ:052-3687451</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>

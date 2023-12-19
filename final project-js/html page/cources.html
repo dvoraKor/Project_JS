@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" a href="../pictures/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מסלולי לימוד</title>
+    <link href="../bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+
+<body dir="rtl" onload="louding_course()" onscroll="scrol(event)">
+    <header>
+        <div id="head2">
+            <div id="routing">
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="home()">דף הבית</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cources()">מסלולי לימוד</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cours()">הרשמה לקורס</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="response()">תגובות</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="aplication()">הרשמה לאתר</p>
+                </div>
+            </div>
+
+            <img id="logo" src="../pictures/logo.png">
+        </div>
+        <!-- <div id="line"></div> -->
+    </header>
+    
+        <i id="sort_price" class=" bi bi-coin buttonsort" onclick="sort1()" onmouseover="price_()">  </i>
+        <div id="sort_price_"></div>
+        <i id="sort_teacher" class="bi bi-person-video3 buttonsort" onclick="sort2()" onmouseover="teacher_()"></i>
+        <div id="sort_teacher_"></div>
+        <br>
+        <div id="chekbox2" style="display: none;">
+            <input type="checkbox" id="option1" value="יהודית לוי" onchange="cheke(event,option1)">
+    <label>יהודית לוי</label>
+    <input type="checkbox" id="option2" value="רבקי בר" onchange="cheke(event,option2)">
+    <label>רבקי בר</label>
+    <input type="checkbox" id="option3" value="שרה לביא" onchange="cheke(event,option3)">
+    <label>שרה לביא</label>
+   </div>   
+    
+   <i  id="ttop2" class="bi bi-arrow-up-circle" style="display:none" onclick="ttop()"></i>
+    <div id="all_cources"></div>
+   </div> 
+    <script src="../js page/cources.js"></script>
+</body>
+</html>

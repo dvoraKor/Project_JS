@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" a href="../pictures/logo.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+    <title>תגובות</title>
+</head>
+<body  dir="rtl" onload="printarr()">
+    <header>
+        <div id="head2">
+            <div id="routing">
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="home()">דף הבית</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cources()">מסלולי לימוד</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="cours()">הרשמה לקורס</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="response()">תגובות</p>
+                </div>
+                <div data-id="btn7" class="btn btn7 routing2">
+                    <div id="underline"></div>
+                    <p onclick="aplication()">הרשמה לאתר</p>
+                </div>
+            </div>
+            <img id="logo" src="../pictures/logo.png">
+        </div>
+            </header>
+    <p id="top_title">תגובות</p>
+   <div id="res">  
+    <div class="stars">
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+    </div>
+    <p class="default_response">"התחלתי קורס צילום רק לפני חצי שנה וכיום <br>אני כבר מצלמת צילומי חוץ ברמה גבוהה ומרויחה כסף"</p>
+    <div class="stars">
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star"></i>
+    </div>
+    <p class="default_response"> "ההשמה של סקול אונליין מהגבוהות בשוק!! נכנסתי לעבודה<br>ממש בגמר הקורס ואני נהנית ממשכורת שווה"</p>
+    <div class="stars">
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star"></i>
+    </div>
+    <p class="default_response">"המורות בסקול אונליין ברמה!! יש להן את כל הכלים <br>לתת לך שתצאי מקצועית... ממליצה בחום!! "</p>
+    <div class="stars">
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+    </div>
+    <p class="default_response">"למדתי קורס עיצוב פנים וכיום אני עובדת<br> אצל אדריכלית מוכרת מאד שמעריכה את הידע שצברתי"</p>
+    <div class="stars">
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+        <i class="bi-star-fill"></i>
+    </div>
+    <p class="default_response">"שמעתי מחברה על הקורסים המקצועיים של סקול אונליין ,בררתי פרטים ונדהמתי<br> מהמחירים השווים, מהמורות המקצועיות, מאחוזי ההשמה ...מיד נרשמתי!!"</p>
+</div>
+    
+    <p class="mre">דרג לנו את שביעות רצונך מהאתר!</p>
+    <div id="stars2">
+        <i class="bi-star" onclick="other_star(event)"></i>
+        <i class="bi-star" onclick="other_star(event)"></i>
+        <i class="bi-star" onclick="other_star(event)"></i>
+        <i class="bi-star" onclick="other_star(event)"></i>
+        <i class="bi-star" onclick="other_star(event)"></i>  
+    </div>
+    <p class="mre">והתגובה שלך:</p>
+    <textarea id="your_response" onblur="your_response()"></textarea>
+    
+    <script src="../js page/response.js"></script>
+</body>
+</html>

@@ -1,0 +1,775 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* header */
+header {
+  width: 100vw;
+  background-color: rgb(200 219 225);
+  /* position: absolute;
+    z-index: 20; */
+}
+#routing {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 14vh;
+  overflow-x: hidden;
+}
+.btn {
+  display: inline-flex;
+  border: 2px solid rgb(200 219 225);
+  color: #008fba;
+  overflow: hidden;
+  place-content: center;
+  background: transparent;
+}
+
+.btn7 {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn7 span {
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+#underline {
+  width: 100%;
+  height: 0.25vw;
+  margin-top: 15vh;
+  align-self: flex-end;
+  left: -100%;
+  background: #008fba;
+  position: absolute;
+  transition: all .3s ease-Out;
+  bottom: 0;
+}
+
+.btn7:hover #underline {
+  left: 0;
+}
+
+#head2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.routing2 {
+  margin-inline-start: 5vw;
+  margin-block-end: 0;
+  font-size: x-large;
+  color: #008fba;
+
+}
+
+.links {
+  color: #008fba;
+}
+
+#logo {
+  height: 25vh;
+  margin-top: 0vh;
+  margin-inline-start: 16vw;
+  margin-inline-end: 0%;
+}
+
+#logo2 {
+  height: 25vh;
+  margin-top: 0vh;
+  margin-inline-end: 0%;
+  margin-inline-start: 0vw;
+}
+
+/* section */
+section {
+  background-color: rgb(184 214 216);
+}
+
+#imbg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+}
+
+#pri {
+  position: absolute;
+  z-index: 20;
+  background-color: rgb(172, 163, 163);
+  opacity: 0.4;
+  width: 100%;
+  height: 30vh;
+  position: fixed;
+  font-size: 4vw;
+  text-align: center;
+  margin: auto;
+}
+
+#ttop1 {
+  position: absolute;
+  z-index: 50;
+  position: fixed;
+  width: 5vw;
+  height: 5vw;
+  font-size: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw 5px #7b7b7b;
+  margin-top: 58vh;
+  margin-inline-start: 86%;
+  background-color: rgb(108, 106, 106);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#ttop2 {
+  position: absolute;
+  z-index: 220;
+  position: fixed;
+  width: 5vw;
+  height: 5vw;
+  font-size: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw 5px #7b7b7b;
+  margin-top: 50vh;
+  margin-inline-start: 91vw;
+  background-color: rgb(108, 106, 106);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#ttop3 {
+  position: fixed;
+  width: 5vw;
+  height: 5vw;
+  font-size: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw 5px #7b7b7b;
+
+  background-color: rgb(108, 106, 106);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#chat3 {
+  position: absolute;
+  z-index: 50;
+  position: fixed;
+  width: 5vw;
+  height: 5vw;
+  font-size: 4.5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 2vw 5px #7b7b7b;
+  margin-top: 58vh;
+  margin-inline-start: 92.5%;
+  background-color: rgb(58 170 53);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+/* הרשמה לאתר */
+.logininput {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#xlogin {
+  display: block;
+  margin-top: 5vh;
+  margin-inline-end: 5vw;
+  position: absolute;
+  z-index: 100;
+  color: rgb(153, 148, 153);
+  border-width: 2px;
+}
+
+.log {
+  background-color: rgb(200 219 225);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+#borberform {
+  margin-top: 10vh;
+  border: 2px solid #008fba;
+  width: 50%;
+  margin: auto;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/* צאט */
+#chat {
+  position: absolute;
+  z-index: 200;
+  left: 0.5vw;
+  top: 41vh;
+  height: 55vh;
+  width: 20vw;
+  background-color: rgb(248, 239, 239);
+  border: 1mm solid black;
+  border-radius: 2mm;
+
+}
+
+#topchat {
+  width: 20vw;
+  height: 8vh;
+  background-color: rgb(200 219 225);
+}
+
+#small_logo {
+
+  height: 8vh;
+}
+
+#xchat {
+  margin-top: 2vh;
+  margin-inline-start: 1vw;
+  color: rgb(153, 148, 153);
+  border-width: 2px
+}
+
+#imbg {
+  display: block;
+}
+
+#chat2 {
+  height: 41.5vh;
+  width: 20vw;
+  overflow-y: scroll;
+}
+
+#what {
+  height: 4vh;
+  width: 18.8vw;
+  background-color: rgb(248, 239, 239);
+  ;
+  border: 0.2vw solid rgb(248, 239, 239);
+  border-top-color: rgb(200 219 225);
+}
+
+.questions {
+  background-color: dimgrey;
+  direction: ltr;
+}
+
+.answers {
+  background-color: #ccc;
+}
+
+/* תגובות */
+.default_response {
+  border: 1mm solid #008fba;
+  height: 15vh;
+  width: 45vw;
+  text-align: center;
+  margin: auto;
+  font-size: large;
+}
+
+#your_response {
+  width: 45vw;
+  height: 15vh;
+  margin-inline-start: 26.5vw;
+  text-align: center;
+  font-size: large;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-inline-start: 26.5vw;
+  border-top: 1mm solid #008fba;
+  width: 45vw;
+  text-align: center;
+  margin-top: 8vw;
+}
+#stars2 {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  margin-inline-start: 26.5vw;
+  width: 45vw;
+  text-align: center;
+}
+#res{
+  margin: auto;
+  color: #008fba;
+}
+#top_title{
+  text-align: center;
+  font-size: 5vw;
+  color: #008fba;
+}
+.mre{
+  margin-inline-start: 26.5vw;
+  color:#008fba; 
+}
+i {
+  margin: 1vw;
+}
+
+/* חיפוש קורס */
+#input_search {
+  position: absolute;
+  z-index: 999;
+  margin-inline-end: 23.8vw;
+  margin-top: 2.8vh;
+  background-color: rgb(200 219 225);
+  border-radius: 3mm;
+  width: 8vw;
+  border: 1mm solid white;
+
+}
+
+/* הצגת כל הקורסים */
+.courseimg {
+  height: 38vh;
+  width: 32vw;
+  position: absolute;
+  z-index: 800;
+  margin-inline-start: 49vw;
+  margin-top: 30vh;
+  border: 2mm solid rgb(255, 255, 255);
+}
+
+.one_course {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+#text_ {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 45vw;
+  background-color: rgb(200 219 225);
+  box-shadow: 0 0 2vw 3px #cdc9c9;
+  margin-top: 19vh;
+  margin-inline-start: 13vw;
+}
+
+.buttonsort {
+  font-size: 3vw;
+  color: #008fba;
+  /* box-shadow: 0 0 2vw 3px #e6e2e2; */
+  position: absolute;
+  z-index: 900;
+  position: fixed;
+  margin-inline-start: 3vw;
+}
+
+#sort_price {
+  margin-block-start: 24vh;
+}
+
+#sort_teacher {
+  margin-block-start: 33vh;
+}
+
+#text10 {
+  font-size: 1.5vw;
+  color: #008fba;
+  position: absolute;
+  z-index: 2000;
+  position: fixed;
+  margin-inline-start: 3vw;
+  margin-block-start: 30vh;
+}
+
+#text11 {
+  font-size: 1.5vw;
+  color: #008fba;
+  position: absolute;
+  z-index: 2000;
+  position: fixed;
+  margin-inline-start: 3vw;
+  margin-block-start: 40vh;
+}
+
+#chekbox2 {
+  position: absolute;
+  z-index: 1000;
+  position: fixed;
+  margin-inline-start: 0vw;
+  margin-block-start: 19vw;
+  color: #008fba;
+}
+
+/* הרשמה לקורס  */
+#logo3 {
+  height: 25vh;
+  margin-top: 0vh;
+  margin-inline-start: 34%;
+
+}
+
+#ookk {
+  border-radius: 3mm;
+  background-color: rgb(200 219 225);
+  margin: 3vh 43% 4vh 47%;
+  width: 7vw;
+  height: 5vh;
+  border-width: 0px;
+  box-shadow: 0 0 1vw 1.5px #d6d1d1;
+}
+#det{
+  text-align: center;
+  font-size: 3vw;
+  color: #008fba;
+}
+.details5{
+  text-align: center;
+  font-size: 2vw;
+  color: #008fba;
+}
+
+/* הצגת קורס בודד */
+#single_course {
+  font-size: 8vw;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  /* padding-top: 20vh; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.small_line {
+  width: 100vw;
+  height: 2mm;
+  background-color: white;
+}
+
+#form_details {
+  background-color: #008fba;
+  width: 100vw;
+  height: 70vh;
+  padding-top: 8vh;
+}
+
+#Details {
+  border: 2mm solid white;
+  border-radius: 2mm;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  color: white;
+  font-size: 3.5vw;
+}
+
+#details2 {
+  margin-bottom: 2vw;
+  font-size: 3.5vw;
+}
+
+.detail {
+
+  font-size: 2vw;
+}
+
+#picture_works {
+  margin-inline-start: 9vw;
+}
+
+#all_works {
+  text-align: center;
+  color: #008fba;
+  font-size: 4vw;
+
+}
+
+.one_work {
+  width: 20vw;
+  border-style: solid;
+  margin: 2vw;
+  transition-duration: 1s;
+  border-color: #008fba;
+  padding: 2vh;
+}
+
+.one_work:hover {
+
+  transform: scale(1.2, 1.2);
+  box-shadow: 0 0 1vw 3px #d6d1d1;
+}
+
+/* תלמידות שנרשמו */
+#cart {
+  position: absolute;
+  z-index: 1000;
+  width: 15em;
+  height: 20em;
+  top: 10vh;
+  left: 15vw;
+  background-color: #ffffff;
+  box-shadow: 0 0 1vw 2px #eae1e1;
+  display: none;
+  overflow-y: scroll;
+}
+#top_cart{
+  text-align: center;
+}
+#xcart{
+margin-inline-start: 1vw;
+margin-top: 2vh;
+}
+#linelong{
+ background-color: #008fba;
+ width: 100%;
+ height: 0.5vh;
+}
+.line4{
+  background-color: #008fba;
+ height: 0.5vh;
+ width: 50%; 
+ margin: auto;
+}
+.trush{
+  margin-inline-end: 2vw;
+}
+.trush:hover{
+  transform: scale(1.2, 1.2);
+ }
+.stud{
+  margin-inline-start: 1vw;
+  width:13vw;
+  margin-top: 1vw;
+  
+}
+#big_student2 {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 0 1vw 1px #e2f0f1;
+  margin-bottom:2vh ;
+}
+
+.one_c {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+}
+
+
+/* try */
+/* body {
+  font-size: 16px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  text-align: center;
+  background-color: #f8faff;
+} */
+/* 
+.bubbly-button {
+  font-family: "Helvetica", "Arial", sans-serif;
+  display: inline-block;
+  font-size: 1em;
+  padding: 1em 2em;
+  margin-top: 100px;
+  margin-bottom: 60px;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #ff0081;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.5);
+  position: absolute;
+  z-index: 9999999;
+}
+
+.bubbly-button:focus {
+  outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 140%;
+  height: 100%;
+  left: -20%;
+  z-index: -1000;
+  transition: all ease-in-out 0.5s;
+  background-repeat: no-repeat;
+}
+.bubbly-button:before {
+  display: none;
+  top: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 20%, #ff0081 20%, transparent 30%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+  display: none;
+  bottom: -75%;
+  background-image: radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, transparent 10%, #ff0081 15%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%), radial-gradient(circle, #ff0081 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+  transform: scale(0.9);
+  background-color: #e60074;
+  box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+  display: block;
+  animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+  display: block;
+  animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+@keyframes topBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+  }
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+  }
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+@keyframes bottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+  }
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+  }
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+body, .button, .tick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+.button {
+  width: 300px;
+  height: 80px;
+  background: dodgerblue;
+  border-radius: 6px;
+  transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+}
+.button svg {
+  transform: rotate(180deg);
+  transition: all .5s;
+}
+.button__circle {
+  width: 120px;
+  height: 120px;
+  background: mediumseagreen;
+  border-radius: 50%;
+  transform: rotate(-180deg);
+}
+.button:hover {
+  cursor: pointer;
+}
+.tick {
+  color: white;
+  font-size: 2em;
+  transition: all .9s;
+} */
+footer {
+  height: 23vh;
+  width:100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(200 219 225);
+  color: #008fba;
+  margin-top: 97.8vh;
+}
+.line-footer{
+  width: 0.25vw;
+  height: 60%;
+  margin-inline: 9vw;
+  background-color: #008fba;
+ 
+}
+.conection{
+  display: flex;
+  flex-direction: column;
+}
+.place{
+  display: flex;
+  flex-direction: column;
+}
+.textw{
+  margin-inline-start: 4vw;
+}

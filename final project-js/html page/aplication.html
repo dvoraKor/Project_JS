@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" a href="../pictures/logo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>הרשמה לאתר</title>
+<link href="../bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="../style.css" rel="stylesheet">
+
+</head>
+<body> 
+<form action="../home/home.html" method="post">
+  <div id="borberform">
+    <i class="bi bi-x-lg" id="xlogin" onclick="x_login()"></i>
+  <div class="imgcontainer">
+    <img src="../pictures/man2.PNG">
+    <p alt="User" class="avatar"></p>
+  <p class="person">USER</p>
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required class="logininput" onkeypress="IsLetterOfName2(event)" onblur="tmp_memory(event)"><span class="psw" id="validlettr"></span>
+    
+    <label for="email"><b>Email</b></label>
+<input type="email" placeholder="Enter email" name="email" required class="logininput" >
+ <span class="psw" id="hin" onclick="hint_of_password(event)" >Forgot password?</span>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required class="logininput" > 
+    <label for="Hint"><b>Hint of password</b></label>
+    <input type="text" placeholder="Enter Hint of password" name="Hint" class="logininput" >
+    <button type="submit" class="log"  onclick="login(event)">Login</button>
+    
+  </div>
+
+  <div class="container" style="background-color:rgb(200 219 225)"> 
+  </div>
+</div>
+</form>
+<script src="../js page/aplication.js"></script>
+</body>
+</html>
